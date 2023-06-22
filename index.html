@@ -16,37 +16,39 @@
 </head>
 
 <body>
-    <section class="section section__form">
-        <form class="container container__form" name="addProd" action="https://jsonplaceholder.typicode.com/posts" method="post">
-            <p class="form__caption">Добавить товар</p>
-            <fieldset class="form__card">
-                <label class="card__title" for="name">Наименование</label>
-                <input  class="card__input" type="text" name="name" id="name" required>
-    
-                <label class="card__title" for="category">Категория</label>
-                <input class="card__input" type="text" name="category" id="category" required>
-    
-                <label class="card__title" for="units">Единицы измерения</label>
-                <input class="card__input" type="text" name="units" id="units" required>
-    
-                <div class="checkbox">
+    <div class="overlay">
+        <div class="section section__form">
+            <form class="container container__form" name="addProd" action="https://jsonplaceholder.typicode.com/posts" method="post">
+                <p class="form__caption">Добавить товар</p>
+                <fieldset class="form__card">
+                    <label class="card__title" for="name">Наименование</label>
+                    <input  class="card__input" type="text" name="name" id="name" required>
+        
+                    <label class="card__title" for="category">Категория</label>
+                    <input class="card__input" type="text" name="category" id="category" required>
+        
+                    <label class="card__title" for="units">Единицы измерения</label>
+                    <input class="card__input" type="text" name="units" id="units" required>
+        
                     <label class="card__title" for="discount">Дисконт</label>
-                    <input class="checkbox__input"  type="checkbox" name="discount" value="discount">
-                    <input class="card__input card__input_disabled" type="text" name="discount" id="discount" disabled required>
-                </div>
-    
-                <label class="card__title" for="description">Описание</label>
-                <textarea class="card__input card__input_textarea" name="description" id="description" required></textarea>
-    
-                <label class="card__title" for="count">Количество</label>
-                <input class="card__input" type="number" name="count" id="count" min="1" required>
-    
-                <label class="card__title" for="price">Цена</label>
-                <input class="card__input" type="number" name="price" id="price" required>
-            </fieldset>
-            <button  class="form__btn" type="submit">Добавить товар</button>
-        </form>
-    </section>
+                    <div class="card__two-column">
+                        <input class="checkbox__input"  type="checkbox" aria-label="Добавить скидку">
+                        <input class="card__input" type="text" name="discount" id="discount" disabled required>
+                    </div>
+        
+                    <label class="card__title" for="description">Описание</label>
+                    <textarea class="card__input card__input_textarea" name="description" id="description" rows="5" required></textarea>
+        
+                    <label class="card__title" for="count">Количество</label>
+                    <input class="card__input" type="number" name="count" id="count" min="1" required>
+        
+                    <label class="card__title" for="price">Цена</label>
+                    <input class="card__input" type="number" name="price" id="price" required>
+                </fieldset>
+                <button  class="form__btn" type="submit">Добавить товар</button>
+            </form>
+        </div>
+    </div>
 </body>
 
 </html>

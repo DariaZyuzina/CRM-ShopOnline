@@ -1,11 +1,13 @@
-.checkbox {
+.card__two-column {
     position: relative;
-    display: block;
+    padding: 0 0 0 50px;
     margin-bottom: 12px;
 }
 
 .checkbox__input {
     position: absolute;
+    top: 0;
+    left: 0;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
