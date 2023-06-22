@@ -97,9 +97,10 @@
     background-color: #EEEEEE;
 }
 
-.card__input_textarea {
-    resize: none;
-    height: 112px;
+.card__two-column {
+    position: relative;
+    padding: 0 0 0 50px;
+    margin-bottom: 12px;
 }
 
 .form__btn {
